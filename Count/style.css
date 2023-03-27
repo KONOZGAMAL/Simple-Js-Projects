@@ -1,0 +1,51 @@
+
+     * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       background-color: whitesmoke;
+    }
+
+    .mainClass {
+        width: 38%;
+        height: 55%;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, .7);
+       border-radius: 12px;
+       background-color: whitesmoke;
+
+    }
+    .mainClass .nav{
+        height: 50%;
+        font-weight: bold;
+    }
+    .mainClass h1{
+        text-align: center;
+        font-size: 32px;
+        margin: 35px 10px ;
+    }
+    .mainClass p{
+        text-align: center;
+        font-size: 40px;
+    }
+    .mainClass .btnS{
+        text-align: center;
+    }
+    .btnS #one,
+   .btnS #two{
+        padding: 10px;
+       cursor: pointer;
+       border: 1px solid #ddd;
+       font-size: 16px;
+       margin: -5px 10px;
+    }
+

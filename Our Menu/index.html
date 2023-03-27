@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Menu</title>
+    <link rel="stylesheet" href="./all.min.css" />
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: -1;
+    } */
+
+    .mainClass {
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainClass h2 {
+        margin-top: 80px;
+    }
+
+    .list {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+    }
+
+    .list li {
+        border: 2px solid rgb(4, 4, 232);
+        margin: 8px;
+        padding: 8px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .active {
+        background-color: #3f51b5;
+        color: white;
+    }
+
+    .images {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 2px auto;
+      position: relative;
+    }
+
+    .images img {
+        width: 335px;
+        height: 230px;
+        margin: 6px auto;
+        color: white;
+        font-size: 30px;
+    }
+    img:hover {
+       background-color: black;
+       opacity: 0.8;
+        border-bottom:3px solid #3f51b5 ;
+    }
+</style>
+
+<body>
+    <div class="mainClass">
+        <h2>Our Menu</h2>
+    </div>
+    <div>
+        <ul class="list">
+            <li class="active" data-menu="all" id="main">all</li>
+            <li data-menu="bFast">bFast</li>
+            <li data-menu="Lunch">Lunch</li>
+            <li data-menu="snakes">snakes</li>
+        </ul>
+    </div>
+    <div class="images">
+        <img src="./img/lunc.jpg" class="Lunch" />
+        <img src="./img/b.jpg" class="bFast" />
+      
+        <img src="./img/sna.jpg" class="snakes" />
+        
+        <img src="./img/bre.jpg" class= "Lunch"/>
+      
+        <img src="./img/s.jpg" class="snakes" />
+       
+        <img src="./img/lun.jpg" class="Lunch" />
+      
+        <img src="./img/brea.jpg" class="bFast" />
+        
+        <img src="./img/snak.jpg" class="snakes"/>
+        <img src="./img/br.jpg" class="bFast" />
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Paragraph</title>
+    <link rel="stylesheet" href="./all.min.css"/>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    html,
+    body{
+   margin: 0px;
+   padding: 0px;
+   width: 100vw;
+   height: 100vh;
+    }
+    .fa-solid{
+        color: chocolate;
+        font-size: 30px;
+        margin-left: 100px;
+    }
+    h1{
+        font-family: Arial, Helvetica, sans-serif;
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-size: 25px;
+       margin-top: 110px;
+    }
+    span{
+        display: block;
+        width: 5%;
+        height: 2px;
+        border: 2px solid chocolate;
+        margin: 2px auto;
+    }
+    .className{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .className [type=number]{
+        border-radius: 10px;
+        border: none;
+        padding: 9px;
+        background-color: #ddd;
+    }
+    textarea:focus, .className [type=number]:focus{
+    outline: none;
+}
+    .className [type="submit"]{
+        border-radius: 10px;
+        border: none;
+        padding: 11px;
+        color: white;
+        background-color:chocolate;
+    }
+    #paragr{
+        color:black;
+        opacity: 0.8;
+        width: 40%;
+        /* height: 80%; */
+        display: flex;
+        font-size: 19px;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        padding: 10px;
+        margin: 10px auto; 
+    }
+</style>
+<body>
+    <a href="../index.html"><i class="fa-solid fa-backward"></i></a>
+    <h1 class="head">Generate Paragraph</h1>
+    <span></span>
+    <div class="className">
+        <input type="number" />
+        <input type="submit" value="Generate"/>
+    </div>
+    <p id="paragr"></p>
+    <script src="./script.js"></script>
+</body>
+</html>

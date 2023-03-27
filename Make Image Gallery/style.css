@@ -1,0 +1,48 @@
+
+* {
+box-sizing: border-box;
+}
+
+html,
+body {
+margin: 0px auto;
+padding: 0px;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+.className {
+width: 40%;
+height: 90%;
+display: flex;
+border: 1px solid #ddd;
+box-shadow: 2px 3px 10px rgba(0,0, 0, .3);
+cursor: pointer;
+}
+.className .part1{
+width: 15%;
+margin: 20px ;
+}
+.part1 img{
+width: 90px;
+height: 92px;
+margin: 3px 0;
+border-radius: 5px;
+opacity: .6;
+}
+.part1 img:hover{
+opacity: 1;
+}
+
+.part2{
+width: 32%;
+}
+.part2 img{
+width: 350px;
+height: 500px;
+margin: 20px ;
+
+}

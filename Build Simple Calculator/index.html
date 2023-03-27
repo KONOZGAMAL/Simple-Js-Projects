@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Simple Calculator</title>
+    <link rel="stylesheet" href="./all.min.css"/>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* .fa-solid{
+        color: chocolate;
+        font-size: 30px;
+        margin-left: 100px;
+    } */
+    .mainClass {
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        border-radius: 10px;
+        height: 500px;
+        box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    #mainID {
+        text-align: right;
+        padding: 26px;
+        margin-bottom: 2px;
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+        height: 130px;
+        font-size: 22px;
+    }
+    #mainID:focus{
+        outline: none;
+    }
+    #line{
+        display: block;
+        border: 1px solid #ddd;
+        width: 90%;
+        margin: 5px auto;
+    }
+    [type="button"] {
+        text-align: center;
+        width: 60px;
+        height: 52px;
+        border: none;
+        margin: 4px ;
+        font-size: 19px;
+        font-weight: 600;
+        border-radius: 50%;
+    }
+
+    .de {
+        color: brown;
+        font-size:25px ;
+    }
+
+    #equal{
+        background-color:brown;
+        color: lightsalmon;
+    }
+    #clear{
+    color: red;
+    }
+</style>
+
+<body>
+    <div class="mainClass">
+        <div class="perant">
+            <form>
+                <input id="mainID" type="text" />
+                <span id="line"></span>
+                <form>
+            <div class="Calculator1">
+                <button type="button" id="clear">AC</button>
+                <button type="button" data-num="+" value="+" class="btn de">+</button>
+                <button type="button" data-num="%" value="%" class="btn de">%</button>
+                <button type="button" data-num="/" value="/" class="btn de">/</button>
+
+                <button type="button" data-num="7" value="7" class="btn">7</button>
+                <button type="button" data-num="8" value="8" class="btn">8</button>
+                <button type="button" data-num="9" value="9" class="btn">9</button>
+                <button type="button" data-num="*" value="*" class="btn de">*</button>
+                <button type="button" data-num="4" value="4" class="btn">4</button>
+                <button type="button" data-num="5" value="5" class="btn">5</button>
+                <button type="button" data-num="6" value="6" class="btn">6</button>
+                <button type="button" data-num="-" value="-" class="btn de">-</button>
+                <button type="button" data-num="1" value="1" class="btn">1</button>
+                <button type="button" data-num="2" value="2" class="btn">2</button>
+                <button type="button" data-num="3" value="3" class="btn">3</button>
+                <button type="button" data-num="0" value="0" class="btn">0</button>
+                <button type="button" data-num="." value="." class="btn">.</button>
+
+                <button type="button" id="equal">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
